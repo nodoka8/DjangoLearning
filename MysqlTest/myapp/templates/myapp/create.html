@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <body>
+    <form method="POST" action="{% url 'create' %}">
+      {% csrf_token %}
+      <label>ユーザーID</label>
+
+      <label>パスワード</label>
+
+      <label>パスワード(確認)</label>
+
+      <button type = "submit">登録</button>
+    </form>
+  </body>
+</html>
